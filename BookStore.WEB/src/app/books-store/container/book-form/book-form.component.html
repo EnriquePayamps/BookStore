@@ -1,0 +1,23 @@
+<h1>Registro de libro</h1>
+<form *ngIf="!loading" [formGroup]="bookFormGroup">
+    <div class="padre">
+    
+    <label for="title">Titulo</label><br>
+    <input type="text" id="title" formControlName="title"><br>
+
+    <label for="description">Descripcion</label><br>
+    <input type="text" id="description" formControlName="description"><br>
+
+    <label for="pageCount">Paginas</label><br>
+    <input type="text" id="pageCount" formControlName="pageCount"><br>
+
+    <label for="excerpt">Extracto</label><br>
+    <input type="text" id="excerpt" formControlName="excerpt"><br>
+
+    <label for="publishDate">Fecha de publicac</label><br>
+    <input type="text" id="publishDate" formControlName="publishDate"><br>
+    <br>
+    <button type="button" (click)="saveBook()" [disabled]="!bookFormGroup.valid"> Enviar </button>
+</div>
+  </form>
+  <h1 *ngIf="loading">Loading</h1>

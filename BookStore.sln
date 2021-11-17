@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.API", "BookStore.API\BookStore.API.csproj", "{2B7EB95A-AB82-48F5-B47B-EC2960D34249}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BookStore.WEB", "BookStore.WEB\", "{5C90E6D1-9983-4098-9B5F-DF372A7844E5}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51142"
+		Debug.AspNetCompiler.PhysicalPath = "BookStore.WEB\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51142\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51142"
+		Release.AspNetCompiler.PhysicalPath = "BookStore.WEB\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51142\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51142"
+		SlnRelativePath = "BookStore.WEB\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B7EB95A-AB82-48F5-B47B-EC2960D34249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7EB95A-AB82-48F5-B47B-EC2960D34249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7EB95A-AB82-48F5-B47B-EC2960D34249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7EB95A-AB82-48F5-B47B-EC2960D34249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C90E6D1-9983-4098-9B5F-DF372A7844E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C90E6D1-9983-4098-9B5F-DF372A7844E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C90E6D1-9983-4098-9B5F-DF372A7844E5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C90E6D1-9983-4098-9B5F-DF372A7844E5}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAD6A2EF-C068-419E-992D-EEA7749E6604}
+	EndGlobalSection
+EndGlobal
