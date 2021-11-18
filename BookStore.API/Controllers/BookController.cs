@@ -21,7 +21,7 @@ namespace BookStore.API.Controllers
             using var client = new HttpClient();
             client.BaseAddress = new Uri("https://fakerestapi.azurewebsites.net/api/v1/Books");
 
-            using HttpResponseMessage response = await client.GetAsync("");
+            using HttpResponseMessage response = await client.GetAsync("https://fakerestapi.azurewebsites.net/api/v1/Books");
             var responseContent = response.Content.ReadAsStringAsync().Result;
             response.EnsureSuccessStatusCode();
 
@@ -70,6 +70,7 @@ namespace BookStore.API.Controllers
 
             using HttpResponseMessage response = await client.PutAsync($"{id}", content);
             var responseContent = await response.Content.ReadAsStringAsync();
+
             response.EnsureSuccessStatusCode();
 
             return Ok(responseContent);

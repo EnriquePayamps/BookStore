@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { Book } from "../../models";
 
 @Component({
@@ -8,7 +8,11 @@ import { Book } from "../../models";
 })
 export class BookListComponent {
     @Input() books: Book[] | null = null;
-    
+    @Output() delete = new EventEmitter<number>();
 
     displayedColumns: string[] = ['id', 'title', 'description', 'pageCount','publishDate','deleteAction'];
+
+    onDeleteClick(bookId: number) {
+        this.delete.emit(bookId);
+    }
 }

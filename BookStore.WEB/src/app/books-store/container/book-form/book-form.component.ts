@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { ActivatedRoute, ActivatedRouteSnapshot, Router, RouterStateSnapshot } from "@angular/router";
+import { ActivatedRoute, ActivatedRouteSnapshot, Router, RouterLinkWithHref, RouterStateSnapshot } from "@angular/router";
 import { take } from "rxjs";
 import { BookStoreService } from "../../book-store.service";
 import { Book } from "../../models";
@@ -45,8 +45,12 @@ export class BookFormComponent implements  OnInit {
         try {
             if(this.isNew)
                 await this.service.createBook(book).toPromise();
+                
+                
+            
             else
                 await this.service.updateBook(this.bookId!, book).toPromise();
+                
         }
         catch (err) {
             
